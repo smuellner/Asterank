@@ -30,7 +30,7 @@ class AsteroidTableViewController: UITableViewController {
         toolBar.barStyle = UIBarStyle.Black
         toolBar.translucent = true
         toolBar.tintColor = UIColor.whiteColor()
-        let doneButton = UIBarButtonItem(title: "Search", style: UIBarButtonItemStyle.Done, target: self, action: "searchPressed")
+        let doneButton = UIBarButtonItem(title: "Search", style: UIBarButtonItemStyle.Done, target: self, action: #selector(AsteroidTableViewController.searchPressed))
         let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonSystemItem.FlexibleSpace, target: nil, action: nil)
         toolBar.setItems([spaceButton, doneButton], animated: false)
         toolBar.userInteractionEnabled = true
